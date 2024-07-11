@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tracking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/tracking.css">
+  </head>
+  <body>
+    <div class="header-flexbox" style="z-index: 1;">
+      <div class="left-part">
+        <a href="http://127.0.0.1:5501/amazon.html">
+        <img src="images/amazon-logo-white.png" class="amazon-logo">
+        <img src="images/amazon-mobile-logo-white.png" class="amazon-mobile-logo">
+        </a>
+      </div>
+      <div class="middle-part">
+        <input type="text" placeholder="Search" class="search-bar">
+        <button class="search-icon-button">
+          <img src="images/search-icon.png" class="search-icon-image">
+        </button>
+      </div>
+      <div class="right-part">
+        <div class="order-box">
+          <a href="orders.html" class="order-box-hlink">
+          <p class="order-box-text1">Returns</p>
+          <p class="order-box-text2">&#x26; Orders</p>
+        </a>
+         </div>
+         <div class="cart-box">
+           <a href="" class="order-box-hlink2">
+          <img src="images/cart-icon (1).png" class="cart-image">
+          <div class="cart-number">3</div>
+          <p class="cart-box-text"> Cart</p>
+        </a>
+         </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="order-tracking">
+        <a class="back-to-orders-link link-primary" href="orders.html">
+          View all orders
+        </a>
+
+        <div class="delivery-date">
+          Arriving on Monday, June 13
+        </div>
+
+        <div class="product-info">
+          Black and Gray Athletic Cotton Socks - 6 Pairs
+        </div>
+
+        <div class="product-info">
+          Quantity: 1
+        </div>
+
+        <img class="product-image" src="images/athletic-cotton-socks-6-pairs.jpg">
+
+        <div class="progress-labels-container">
+          <div class="progress-label">
+            Preparing
+          </div>
+          <div class="progress-label current-status">
+            Shipped
+          </div>
+          <div class="progress-label">
+            Delivered
+          </div>
+        </div>
+
+        <div class="progress-bar-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

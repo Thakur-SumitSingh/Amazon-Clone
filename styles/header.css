@@ -1,0 +1,146 @@
+p{
+  margin: 0;
+  padding: 0;
+}
+.header-flexbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(19, 25, 33);
+  color: white;
+  height: 65px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  left: 0px;
+}
+.amazon-logo{
+  width: 100px;
+  padding: 10px;
+}
+.left-part{
+  width: 250px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.amazon-logo:hover{
+  border: 1px solid white;
+}
+
+.search-icon-image{
+  width: 20px;
+}
+.middle-part{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+.search-bar{
+  height: 39px;
+  flex: 1;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 20px;
+  max-width: 700px;
+  width: 150px;
+}
+.search-bar::placeholder{
+  font-size: 17px;
+  padding-left: 15px;
+}
+.search-icon-button{
+  padding: 11px;
+  border: none;
+  background-color:rgba(240, 188, 84, 0.957);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -2px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+
+.right-part{
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.order-box{
+  cursor: pointer;
+  width: 70px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.order-box-text1{
+  font-size: 14px;
+}
+.order-box-text2{
+  font-weight: bold;
+}
+.order-box:hover{
+  border: 1px solid white;
+}
+.cart-image{
+  width: 50px;
+}
+.cart-box{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  position: relative;
+}
+.cart-box:hover{
+  border: 1px solid white;
+}
+.cart-box-text{
+  padding-top: 15px;
+  font-weight: bold;
+}
+.cart-number{
+  color: rgb(210, 139, 6);
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  left: 30px;
+  top: 0px;
+}
+.order-box-hlink{
+  text-decoration: none;
+  color: white;
+}
+.order-box-hlink2{
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+
+/* responsive design for header */
+.amazon-mobile-logo{
+  display: none;
+}
+@media (max-width: 800px) {
+  .left-part {
+    width: unset;
+  }
+}
+@media (max-width: 575px) {
+  .amazon-logo {
+    display: none;
+  }
+  .amazon-mobile-logo{
+    display: block;
+    height: 35px;
+    margin-top: 5px;
+  }
+}
