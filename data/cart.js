@@ -1,4 +1,7 @@
-export const cart = [];
+export const cart = [{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d",
+  Quantity: 4
+}];
 
 export function addToCart(checkingIdd){
   let matchedItem;
