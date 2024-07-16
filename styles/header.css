@@ -109,10 +109,10 @@ p{
 }
 .cart-number{
   color: rgb(210, 139, 6);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
   position: absolute;
-  left: 30px;
+  left: 27px;
   top: 0px;
 }
 .order-box-hlink{
