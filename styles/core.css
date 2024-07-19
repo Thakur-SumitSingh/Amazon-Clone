@@ -68,7 +68,7 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 .button-div{
-  margin-top: 40px;
+  margin-top: 15px;
   margin-bottom: 10px;
   padding-left: 10px;
 }
@@ -86,8 +86,10 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 8px;
   opacity: 0;
+  margin-top: 20px;
 }
 
 .added-to-cart img {
@@ -120,4 +122,8 @@
   .Grid{
     grid-template-columns: repeat(2,1fr);
   }
+}
+
+.added-to-cart-after{
+  opacity: 1;
 }

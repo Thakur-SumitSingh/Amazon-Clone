@@ -39,9 +39,6 @@ export function renderOrderSummary() {
                     <span>
                       Quantity: <span class="quantity-label">${item.Quantity}</span>
                     </span>
-                    <span class="update-quantity-link link-primary">
-                      Update
-                    </span>
                     <span class="delete-quantity-link link-primary "data-delete-button-id ="${productId}">
                       Delete
                     </span>

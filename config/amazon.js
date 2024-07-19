@@ -1,5 +1,6 @@
 import {cart, addToCart} from '../data/cart.js';
 import {products} from '../data/products.js';
+displayCartQuantity();
 
 let display_data = '';
 products.forEach((product) => {
@@ -20,7 +21,7 @@ products.forEach((product) => {
         <p>&#x20B9;${product.priceCents}</p>
       </div>
       <div>
-        <select class="drop-down">
+        <select class="drop-down js-drop-down${product.id}">
           <option value="1" selected>1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -35,7 +36,7 @@ products.forEach((product) => {
       </div>
 
       <div class="product-spacer"></div>
-      <div class="added-to-cart">
+      <div class="added-to-cart js-${product.id}">
         <img src="images/checkmark.png">
         Added
       </div>
@@ -57,7 +58,7 @@ function displayCartQuantity(){
 
 document.querySelectorAll('.js-button').forEach((button) => {
   button.addEventListener('click', ()=> {
-   const checkingId = button.dataset.productId;
+   const checkingId = button.dataset.productId; 
    addToCart(checkingId);
    displayCartQuantity();
   });
