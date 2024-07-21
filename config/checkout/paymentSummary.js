@@ -17,7 +17,7 @@ export function renderPaymentSummary(){
 
  const totalBeforeTax = productPrice + ShippingPrice;
  const taxRupee = Math.round(totalBeforeTax * 0.1);
- const totalPrice = totalBeforeTax + taxRupee;
+   const total = totalBeforeTax + taxRupee;
 
  
  const paymentSummaryHTML = `
@@ -47,12 +47,34 @@ export function renderPaymentSummary(){
 
       <div class="payment-summary-row total-row">
         <div>Order total:</div>
-        <div class="payment-summary-money">&#x20B9;${totalPrice}</div>
+        <div class="payment-summary-money">&#x20B9;${total}</div>
       </div>
-
+      <div class="button-div">
+      <a href="orders.html">
       <button class="place-order-button button-primary">
         Place your order
       </button>
+      </a>
+      </div>
  `;
  document.querySelector('.js-payment-summary').innerHTML = paymentSummaryHTML;
+}
+
+// function i made for oredrs page
+export function moneyCall (){
+  let productPrice = 0;
+ let ShippingPrice =0;
+
+ cart.forEach((cartItem) => {
+  const product = getProduct(cartItem.id);
+  productPrice += product.priceCents * cartItem.Quantity;
+  
+  const deliveryOption = getDeliveryOption(cartItem.deliveryOptionId);
+  ShippingPrice += deliveryOption.price;
+ });
+
+ const totalBeforeTax = productPrice + ShippingPrice;
+ const taxRupee = Math.round(totalBeforeTax * 0.1);
+ const total = totalBeforeTax + taxRupee;
+  return total;
 }

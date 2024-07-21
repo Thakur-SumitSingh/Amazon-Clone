@@ -48,12 +48,11 @@ products.forEach((product) => {
 document.querySelector('.js-grid').innerHTML = display_data;
 
 function displayCartQuantity(){
-  let cartQuantity = 0;
+   let cartQuantity = 0;
   cart.forEach((cartItem) => {
   cartQuantity += cartItem.Quantity;
     });
     document.querySelector('.cart-number').innerHTML = cartQuantity;
-  console.log(cart);
 }
 
 document.querySelectorAll('.js-button').forEach((button) => {
